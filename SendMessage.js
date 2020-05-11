@@ -6,9 +6,6 @@ const accountSid = ACCOUNT_SID;
 const authToken = AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
-
-import axios from 'axios';
-
 sendMessage = (phone, status) => {
     client.messages
         .create({
